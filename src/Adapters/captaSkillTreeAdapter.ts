@@ -9,7 +9,7 @@ export async function fetchBaseSkillTree() {
     data = response;
   } catch (error) {
     console.error(error);
-    const { data: response } = await axios.get<BaseSkillTree>('/BaseSkillTree.json');
+    const { data: response } = await axios.get<BaseSkillTree>('BaseSkillTree.json');
     data = response;
   }
   return data;
